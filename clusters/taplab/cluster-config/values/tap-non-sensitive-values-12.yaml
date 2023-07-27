@@ -1,0 +1,213 @@
+---
+tap_install:
+  values: 
+        shared:
+          ingress_domain: "akslab2.tap.fynesy.com"
+          ingress_issuer: "letsencrypt-production"
+
+
+        ceip_policy_disclosed: true
+
+        profile: full 
+        supply_chain: basic 
+
+        ootb_supply_chain_basic: 
+          registry:
+            server: "index.docker.io"
+            repository: "fynesy"
+          gitops:
+            ssh_secret: ""
+
+        ootb_supply_chain_testing_scanning:
+          registry:
+            server: "index.docker.io"
+            repository: "fynesy"
+          gitops:
+            ssh_secret: ""
+
+        contour:
+          envoy:
+            service:
+              type: LoadBalancer 
+
+        buildservice:
+          kp_default_repository: "fynesy/buildservice"
+
+        tap_gui:
+          service_type: ClusterIP # If the shared.ingress_domain is set as earlier, this must be set to ClusterIP.
+          metadataStoreAutoconfiguration: true 
+          app_config:
+            auth:
+              allowGuestAccess: true
+            catalog:
+              locations:
+                - type: url
+                  target: http://github.com/tfynes-pivotal/tapblankcatalog/blob/main/catalog-info.yaml
+
+        metadata_store:
+          ns_for_export_app_cert: "*"
+          app_service_type: ClusterIP # Defaults to LoadBalancer. If shared.ingress_domain is set earlier, this must be set to ClusterIP.
+
+        scanning:
+          metadataStore:
+            url: "" 
+
+        grype:
+          namespace: "default"
+          targetImagePullSecret: "tap-registry"
+          # In a single cluster, the connection between the scanning pod and the metadata store happens inside the cluster and does not pass through ingress. This is automatically configured, you do not need to provide an ingress connection to the store.
+
+        policy:
+          tuf_enabled: false 
+
+        cnrs:
+          domain_template: '{{.Name}}-{{.Namespace}}.{{.Domain}}'
+
+        api_portal:
+          apiPortalServer:
+            #!sourceUrls: https://petstore.swagger.io/v2/swagger.json,http://10.0.166.161/openapi
+            sourceUrls: https://petstore.swagger.io/v2/swagger.json,http://customer-profile-x.default.svc.cluster.local:8080/api-docs,http://scg-operator.tap-install.svc.cluster.local/openapi
+            trustInsecureSourceUrls: true
+            sourceUrlsCacheTtlSec: "30"
+            sourceUrlsTimeoutSec: "30"
+          sso:
+            enabled: true
+            secretName: sso-credentials
+            apiManager:
+              roles: tanzu.read
+          apiKey:
+            enabled: true
+            vault:
+              url: http://vault.vault.svc:8200/
+              role: api-portal-role
+              path: api-portal-for-vmware-tanzu
+          serviceAccount:
+            create: true
+            name: api-portal
+
+        namespace_provisioner:
+          controller: false
+          gitops_install:
+            ref: origin/main
+            subPath: clusters/taplab/cluster-config/namespaces
+            url: https://github.com/tfynes-pivotal/tap-gitops-sc2
+          additional_sources:
+          - git:
+              ref: origin/main
+              subPath: clusters/taplab/cluster-config/namespaces/namespace-resources
+              url: https://github.com/tfynes-pivotal/tap-gitops-sc2
+            path: _ytt_lib/namespace-resources
+        #!  import_data_values_secrets:
+        #!   - name: my-dockerhub-credentials
+        #!     namespace: tap-install
+        #!     create_export: true
+        #! package_overlays:
+        #! - name: api-portal
+          #! secrets:
+          #! - name: api-portal-cm-tls-overlay-secret
+        #! - name: accelerator
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: api-auto-registration
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: appliveview
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: appliveview-apiserver
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: appliveview-connector
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: appliveview-conventions
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: appsso
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: bitnami-services
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: buildservice
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: cartographer
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: cert-manager
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: cnrs
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: contour
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: crossplane
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: developer-conventions
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: eventing
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: fluxcd-source-controller
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: grype
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: learningcenter
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: learningcenter-workshops
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: metadata-store
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: namespace-provisioner
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: ootb-delivery-basic
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: ootb-supply-chain-basic
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: ootb-templates
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: policy-controller
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: scanning
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: service-bindings
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: services-toolkit
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: source-controller
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: spring-boot-conventions
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: tap-auth
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: tap-gui
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: tap-telemetry
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+        #! - name: tekton-pipelines
+          #! secrets:
+          #! - name: reqfix-overlay-secret
+
