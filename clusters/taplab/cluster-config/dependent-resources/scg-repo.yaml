@@ -10,6 +10,6 @@ metadata:
 spec:
   fetch:
     imgpkgBundle:
-      image: "registry.tanzu.vmware.com/spring-cloud-gateway-for-kubernetes/scg-package-repository:2.0.3"
+      image: "registry.tanzu.vmware.com/spring-cloud-gateway-for-kubernetes/scg-package-repository:2.0.6"
       #!secretRef:
         #!name: install-registry-dockerconfig
