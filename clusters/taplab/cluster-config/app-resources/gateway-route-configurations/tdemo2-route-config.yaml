@@ -1,0 +1,16 @@
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGatewayRouteConfig
+metadata:
+  name: tdemo2-gateway-route
+  namespace: default
+spec:
+  service:
+    name: tdemo2
+  routes:
+  - predicates:
+      - Path=/tdemo2
+      - Method=GET
+    filters:
+      - StripPrefix=1
+      - PrefixPath=/
+      - AddRequestHeader=Host,cart

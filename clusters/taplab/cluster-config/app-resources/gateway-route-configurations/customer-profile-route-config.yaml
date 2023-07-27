@@ -1,0 +1,14 @@
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGatewayRouteConfig
+metadata:
+  name: customer-profile-gateway-route
+  namespace: default
+spec:
+  service:
+    name: customer-profile
+  routes:
+  - predicates:
+      - Path=/customer-profile/**
+    filters:
+      - StripPrefix=1
+      - PrefixPath=/

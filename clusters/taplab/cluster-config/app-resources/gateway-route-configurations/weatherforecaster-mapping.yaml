@@ -1,0 +1,10 @@
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGatewayMapping
+metadata:
+  name: weatherforecaster-gateway-mapping
+  namespace: default
+spec:
+  gatewayRef:
+    name: tdemo-gateway
+  routeConfigRef:
+    name: weatherforecaster-gateway-route

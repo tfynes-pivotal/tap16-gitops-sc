@@ -1,0 +1,46 @@
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGateway
+metadata:
+  name: tdemo-gateway
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: tdemo1
+    tanzu.app.live.view: "true"
+    tanzu.app.live.view.application.actuator.port: "8090"
+    tanzu.app.live.view.application.flavours: spring-boot_spring-cloud-gateway
+    tanzu.app.live.view.application.actuator.path: actuator
+    tanzu.app.live.view.application.name: tdemo-gateway
+spec:
+  observability:
+    metrics:
+      prometheus:
+        enabled: true
+  count: 1
+  host: tdemo.akslab2.tap.fynesy.com
+  api:
+    serverUrl: https://tdemo.akslab2.tap.fynesy.com
+    title: Tanzu Demo APIs
+    description: Sample basic SCG + TAP Demos
+    version: 0.0.1
+    groupID: "tanzu-demo"
+    cors:
+      allowedOrigins:
+      - "https://api-portal.akslab2.tap.fynesy.com"
+      allowedMethods:
+      - "GET"
+      allowedHeaders:
+      - '*'
+
+  serviceAccount:
+    name: tdemo-gateway-svc-acc
+
+  extensions:
+    secretsProviders:
+      - name: vault-api-keys
+        vault:
+          roleName: api-portal-role
+          path: api-portal-for-vmware-tanzu
+    filters:
+      apiKey:
+        enabled: true
+        secretsProviderName: vault-api-keys

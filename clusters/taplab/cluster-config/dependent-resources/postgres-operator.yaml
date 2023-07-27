@@ -1,0 +1,24 @@
+#@ load("@ytt:data", "data")
+
+---
+apiVersion: packaging.carvel.dev/v1alpha1
+kind: PackageInstall
+metadata:
+  name: postgres-operator
+  namespace: tap-install
+  annotations:
+    kapp.k14s.io/change-group: postgres-operator
+    kapp.k14s.io/change-rule.0: "upsert after upserting tds-repo"
+    kapp.k14s.io/change-rule.1: "upsert after upserting cert-manager"
+    kapp.k14s.io/change-rule.2: "upsert after upserting tap"
+    #!ext.packaging.carvel.dev/ytt-paths-from-secret-name.0: postgres-overlay-secret
+spec:
+  packageRef:
+    refName: postgres-operator.sql.tanzu.vmware.com
+    versionSelection:
+      constraints: 2.0.1
+      prereleases: {}
+  serviceAccountName: tap-install-sa
+  #!values:
+  #!- secretRef:
+      #!name: postgres-operator-values

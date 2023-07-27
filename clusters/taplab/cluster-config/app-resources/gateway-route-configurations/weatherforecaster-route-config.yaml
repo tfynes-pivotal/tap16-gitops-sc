@@ -1,0 +1,15 @@
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGatewayRouteConfig
+metadata:
+  name: weatherforecaster-gateway-route
+  namespace: default
+spec:
+  service:
+    name: weatherforecaster
+  routes:
+  - predicates:
+      - Path=/weatherforecaster
+      - Method=GET
+    filters:
+      - StripPrefix=1
+      - PrefixPath=/Weatherforecast

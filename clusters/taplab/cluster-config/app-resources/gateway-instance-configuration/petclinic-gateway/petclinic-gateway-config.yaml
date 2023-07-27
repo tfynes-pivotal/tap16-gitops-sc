@@ -1,0 +1,26 @@
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGateway
+metadata:
+  name: petclinic-gateway
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: petclinic
+    tanzu.app.live.view: "true"
+    tanzu.app.live.view.application.actuator.port: "8090"
+    tanzu.app.live.view.application.flavours: spring-boot_spring-cloud-gateway
+    tanzu.app.live.view.application.actuator.path: actuator
+    tanzu.app.live.view.application.name: petclinic-gateway
+spec:
+  observability:
+    metrics:
+      prometheus:
+        enabled: true
+  count: 1
+  api:
+    title: Tanzu PetClinic APIs
+    description: PetClinic with SCG Demo
+    version: 0.0.1
+    groupId: petclinic
+    cors:
+      allowedOrigins:
+      - "https://api-portal.akslab2.tap.fynesy.com"

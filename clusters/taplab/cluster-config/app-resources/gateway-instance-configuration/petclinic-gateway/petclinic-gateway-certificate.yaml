@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: petclinic-gateway-cert
+  namespace: default
+spec:
+  dnsNames:
+  - petclinic.akslab2.tap.fynesy.com
+  secretName: petclinic-gateway-tls-cert
+  issuerRef:
+    name: letsencrypt-production
+    kind: ClusterIssuer

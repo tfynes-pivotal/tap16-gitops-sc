@@ -1,0 +1,21 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  labels:
+    app.kubernetes.io/part-of: tdemo2
+    apps.tanzu.vmware.com/workload-type: web
+  name: tdemo2
+  namespace: default
+spec:
+  params:
+  - name: annotations
+    value:
+      autoscaling.knative.dev/minScale: "1"
+  env:
+    - name: message
+      value: tanzu2
+  source:
+    git:
+      ref:
+        branch: main
+      url: https://github.com/tfynes-pivotal/tdemo1

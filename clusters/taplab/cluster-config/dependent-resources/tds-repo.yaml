@@ -1,0 +1,15 @@
+#@ load("@ytt:data", "data")
+---
+apiVersion: packaging.carvel.dev/v1alpha1
+kind: PackageRepository
+metadata:
+  name: tds
+  namespace: tap-install
+  annotations:
+    kapp.k14s.io/change-group: tds-repo
+spec:
+  fetch:
+    imgpkgBundle:
+      image: "registry.tanzu.vmware.com/packages-for-vmware-tanzu-data-services/tds-packages:1.7.0"
+      #!secretRef:
+        #!name: install-registry-dockerconfig
