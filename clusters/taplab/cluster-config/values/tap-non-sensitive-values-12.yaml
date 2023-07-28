@@ -101,7 +101,7 @@ tap_install:
         #!   - name: my-dockerhub-credentials
         #!     namespace: tap-install
         #!     create_export: true
-         package_overlays:
+        package_overlays:
          - name: api-portal
            secrets:
            - name: api-portal-cm-tls-overlay-secret
