@@ -1,0 +1,50 @@
+installing Vault
+
+RUN SCRIPTS installVault-1.sh -> installVault-2.sh -> installVault-3.sh to automate opinionated
+vault install for api-portal and spring-cloud-gateway
+
+helm repo add hashicorp https://helm.releases.hashicorp.com
+helm upgrade --install vault hashicorp/vault --atomic --namespace vault --create-namespace --wait
+
+tune vault for fast updates
+helm repo update
+helm upgrade --install vault hashicorp/vault --atomic --namespace vault --create-namespace \
+  --set "injector.agentDefaults.templateConfig.staticSecretRenderInterval=16s" --wait
+
+  initialize vault
+
+  kubectl -n vault exec -it vault-0 -- /bin/sh
+  vault operator init
+
+vault operator unseal (x3 with unseal keys)
+
+cd
+export VAULT_TOKEN="hvs.W..."
+vault secrets enable -path=api-portal-for-vmware-tanzu kv-v2
+
+(
+cat << EOF
+  path "api-portal-for-vmware-tanzu/data/*" {
+    capabilities = ["create", "read", "update", "delete", "list"]
+  }
+  path "api-portal-for-vmware-tanzu/metadata/*" {
+    capabilities = ["list", "delete"]
+  }
+EOF
+) | vault policy write api-portal-policy -
+
+
+vault auth enable kubernetes
+
+vault write auth/kubernetes/config \
+     token_reviewer_jwt="$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)" \
+     kubernetes_host="https://$KUBERNETES_PORT_443_TCP_ADDR:443" \
+     kubernetes_ca_cert=@/var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+
+vault write auth/kubernetes/role/api-portal-role \
+    bound_service_account_names=api-portal \
+    bound_service_account_namespaces=api-portal \
+    policies=api-portal-policy \
+    ttl=24h
+
+

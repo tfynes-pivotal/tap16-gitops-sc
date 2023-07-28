@@ -101,113 +101,113 @@ tap_install:
         #!   - name: my-dockerhub-credentials
         #!     namespace: tap-install
         #!     create_export: true
-        #! package_overlays:
-        #! - name: api-portal
-          #! secrets:
-          #! - name: api-portal-cm-tls-overlay-secret
-        #! - name: accelerator
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: api-auto-registration
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: appliveview
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: appliveview-apiserver
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: appliveview-connector
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: appliveview-conventions
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: appsso
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: bitnami-services
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: buildservice
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: cartographer
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: cert-manager
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: cnrs
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: contour
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: crossplane
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: developer-conventions
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: eventing
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: fluxcd-source-controller
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: grype
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: learningcenter
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: learningcenter-workshops
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: metadata-store
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: namespace-provisioner
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: ootb-delivery-basic
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: ootb-supply-chain-basic
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: ootb-templates
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: policy-controller
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: scanning
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: service-bindings
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: services-toolkit
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: source-controller
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: spring-boot-conventions
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: tap-auth
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: tap-gui
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: tap-telemetry
-          #! secrets:
-          #! - name: reqfix-overlay-secret
-        #! - name: tekton-pipelines
-          #! secrets:
-          #! - name: reqfix-overlay-secret
+         package_overlays:
+         - name: api-portal
+           secrets:
+           - name: api-portal-cm-tls-overlay-secret
+         - name: accelerator
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: api-auto-registration
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: appliveview
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: appliveview-apiserver
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: appliveview-connector
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: appliveview-conventions
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: appsso
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: bitnami-services
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: buildservice
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: cartographer
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: cert-manager
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: cnrs
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: contour
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: crossplane
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: developer-conventions
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: eventing
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: fluxcd-source-controller
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: grype
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: learningcenter
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: learningcenter-workshops
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: metadata-store
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: namespace-provisioner
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: ootb-delivery-basic
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: ootb-supply-chain-basic
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: ootb-templates
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: policy-controller
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: scanning
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: service-bindings
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: services-toolkit
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: source-controller
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: spring-boot-conventions
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: tap-auth
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: tap-gui
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: tap-telemetry
+           secrets:
+           - name: reqfix-overlay-secret
+         - name: tekton-pipelines
+           secrets:
+           - name: reqfix-overlay-secret
 
