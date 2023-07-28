@@ -9,7 +9,7 @@ spec:
   serviceAccountName: sync-sa
   fetch:
     - git:
-        ref: origin/main
+        ref: origin/ekslab
         url: https://github.com/tfynes-pivotal/tap16-gitops-sc
         subPath: clusters/taplab/cluster-config/dependent-resources
   template:
