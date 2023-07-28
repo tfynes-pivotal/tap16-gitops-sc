@@ -10,7 +10,7 @@ spec:
   fetch:
     - git:
         ref: origin/main
-        url: https://github.com/tfynes-pivotal/tap16-gitops-sc2
+        url: https://github.com/tfynes-pivotal/tap16-gitops-sc
         subPath: clusters/taplab/cluster-config/app-resources
   template:
     - ytt: {}
