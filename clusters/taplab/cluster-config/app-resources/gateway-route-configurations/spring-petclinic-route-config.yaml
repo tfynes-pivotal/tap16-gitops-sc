@@ -6,7 +6,7 @@ metadata:
 spec:
   service:
     name: spring-petclinic-protected
-    #!uri: https://spring-petclinic-protected-default.akslab2.tap.fynesy.com
+    #!uri: https://spring-petclinic-protected-default.akslab1.tap.fynesy.com
   routes:
   - predicates:
       - Path=/**
