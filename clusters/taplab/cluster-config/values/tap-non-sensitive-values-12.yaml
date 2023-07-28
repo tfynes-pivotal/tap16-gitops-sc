@@ -90,12 +90,12 @@ tap_install:
           gitops_install:
             ref: origin/akslab
             subPath: clusters/taplab/cluster-config/namespaces
-            url: https://github.com/tfynes-pivotal/tap-gitops-sc2
+            url: https://github.com/tfynes-pivotal/tap16-gitops-sc
           additional_sources:
           - git:
               ref: origin/akslab
               subPath: clusters/taplab/cluster-config/namespaces/namespace-resources
-              url: https://github.com/tfynes-pivotal/tap-gitops-sc2
+              url: https://github.com/tfynes-pivotal/tap16-gitops-sc
             path: _ytt_lib/namespace-resources
         #!  import_data_values_secrets:
         #!   - name: my-dockerhub-credentials
