@@ -2,7 +2,7 @@
 tap_install:
   values: 
         shared:
-          ingress_domain: "ekslab1.tap.fynesy.com"
+          ingress_domain: "gkelab1.tap.fynesy.com"
           ingress_issuer: "letsencrypt-production"
 
 
@@ -88,12 +88,12 @@ tap_install:
         namespace_provisioner:
           controller: false
           gitops_install:
-            ref: origin/main
+            ref: origin/gkelab
             subPath: clusters/taplab/cluster-config/namespaces
             url: https://github.com/tfynes-pivotal/tap16-gitops-sc
           additional_sources:
           - git:
-              ref: origin/main
+              ref: origin/gkelab
               subPath: clusters/taplab/cluster-config/namespaces/namespace-resources
               url: https://github.com/tfynes-pivotal/tap16-gitops-sc
             path: _ytt_lib/namespace-resources
