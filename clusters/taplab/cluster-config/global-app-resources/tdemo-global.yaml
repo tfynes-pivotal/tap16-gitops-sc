@@ -13,7 +13,7 @@ spec:
       autoscaling.knative.dev/minScale: "1"
   env:
     - name: message
-      value: tanzu-global
+      value: tanzu-global2
   source:
     git:
       ref:
