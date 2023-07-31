@@ -18,8 +18,6 @@ tap_install:
                         development:
                             clientId: ENC[AES256_GCM,data:Jp2LrRMmiGHZFBHs+Xjd8FLY8VM=,iv:Vo4EM+ltlIORsAe/SoVkdWsNNhkbJWnmVfi4whloHNU=,tag:Hl9UBO5vsnl4xeUFFJhRIQ==,type:str]
                             clientSecret: ENC[AES256_GCM,data:exkgTKcsXTFLnkt8GIp5a8pUE0XWelcYkuA/HF08XlhyXUjZ7khQSw==,iv:kE1gAiDoQeQMnPavG+meQ4xXGL2Qt0mGILz6TnUcUSc=,tag:gQB7TP6m7oqXAdsqQfCLIg==,type:str]
-.vscode:
-    settings.json: ENC[AES256_GCM,data:C9Y=,iv:GjXNvRdVjA+xZMBiKU2RZxKgbYMmp1eRVVDN7EbWP8Q=,tag:2GKmDq8dWMkuPo/Do8TI+w==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -35,8 +33,8 @@ sops:
             S3dXNDBhVXVtQjlLeG9vNWhhYkpBZ1UKPJDVLUigjcJEdSThXLc/yEOXxI7qSRJV
             PPzXWf2JIfJjbVXbdM3nfanlPSSyQZcUCTr+pfJPL4ri7Y+sNm/48Q==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-07-31T18:43:10Z"
-    mac: ENC[AES256_GCM,data:cVQuhT67yE1RXltKVyX9xWS3UdbQH2Ikhz22ZaAUQdUXKMHUc7EjriSutJgq8JUNTuM8RtePyGmuXFV5CLh2s4w6PFqJpkMxexwWxqEI/mBG5gN6rM9Jpcqb05ZYFC4IVJlrdIlaP2IKSotUGom+jDWeQTRKO2neduQdNh7MmcI=,iv:IW0ge9GD2q5Cgr1TXBEgO+KivWCs2jFjmbKugqqE1K8=,tag:OFAZVNTMecFlFW2l7ZwmfA==,type:str]
+    lastmodified: "2023-07-31T18:51:44Z"
+    mac: ENC[AES256_GCM,data:LmXSetqBUVGvsoYqpSWDjN4xkCmfWIQSm23yg1Ff5Kf0F+5OyYlYA49FAlCqErct/ClR5LHCe3f5PUpHPQjVx2x7IR1Nlzj4OP/+a4DkyHnHd8m13sdsmvcjSPLckuu6R2Bx5eAcdZAeS4uIu+oOxdR2kKmb8Oye51b9Ki00tLU=,iv:s2ZQSwyJIvLp2mXdWzE87djVRSOXoaY1U+b+nw5s38w=,tag:4lcMyhQS1uBx+vhqbKkkYw==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
