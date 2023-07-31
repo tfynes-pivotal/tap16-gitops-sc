@@ -38,7 +38,7 @@ tap_install:
           metadataStoreAutoconfiguration: true 
           app_config:
             auth:
-              allowGuestAccess: false
+              allowGuestAccess: true
             catalog:
               locations:
                 - type: url
