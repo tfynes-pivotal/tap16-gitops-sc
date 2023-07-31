@@ -11,6 +11,13 @@ tap_install:
                     github:
                         - host: ENC[AES256_GCM,data:nNOfI/qcuvbM2Q==,iv:TxP4CxVEvptL8WgJnLk12KFVUsoW05Rl4/Pk7st++b0=,tag:z8+Gxs0Qzhm5nh4ehiE41Q==,type:str]
                           token: ENC[AES256_GCM,data:Is5a3pBqBzHffha5gU3ARslU86/0Sm2xIZQxM++sjXb9MKq8/1TDGQ==,iv:6KLO3txmMNhfpYaYUUWSnoBGB3h8V0lfMEwxyxVM1yY=,tag:TSZq+cvyv3jLKCsmk3O96w==,type:str]
+            auth:
+                environment: ENC[AES256_GCM,data:rxayEfRql/GURaQ=,iv:xh/x6dKNU+vwqB2mu05HapBEq1yKPrXKW6ziPiJsu2s=,tag:RTNHVflJstK24OMvzA7/fw==,type:str]
+                providers:
+                    github:
+                        development:
+                            clientId: ENC[AES256_GCM,data:Jp2LrRMmiGHZFBHs+Xjd8FLY8VM=,iv:Vo4EM+ltlIORsAe/SoVkdWsNNhkbJWnmVfi4whloHNU=,tag:Hl9UBO5vsnl4xeUFFJhRIQ==,type:str]
+                            clientSecret: ENC[AES256_GCM,data:exkgTKcsXTFLnkt8GIp5a8pUE0XWelcYkuA/HF08XlhyXUjZ7khQSw==,iv:kE1gAiDoQeQMnPavG+meQ4xXGL2Qt0mGILz6TnUcUSc=,tag:gQB7TP6m7oqXAdsqQfCLIg==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -26,8 +33,8 @@ sops:
             S3dXNDBhVXVtQjlLeG9vNWhhYkpBZ1UKPJDVLUigjcJEdSThXLc/yEOXxI7qSRJV
             PPzXWf2JIfJjbVXbdM3nfanlPSSyQZcUCTr+pfJPL4ri7Y+sNm/48Q==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-07-31T18:20:42Z"
-    mac: ENC[AES256_GCM,data:wCeRTvNW7ElTeQHTLyhI4MCALwVPAzE6z07afKeTWwIvPvXxQcQG16NeKO4ZQuTf+l9yu/wn41/gs6mYGcPu24Su/oTQOM065tsmHMacDxniTV5b3BXenmAgcS94jPshrlaAhkJoLxIIVnuJWSRLdZfKic1Qyp45VibNW1ifDVQ=,iv:PqR9m/pIXayTSuH57X9xqBVH+DoZBjKqvyrbStD/2bw=,tag:ODplAZgUyhQW8dij0rFD+g==,type:str]
+    lastmodified: "2023-07-31T18:40:27Z"
+    mac: ENC[AES256_GCM,data:PHJmDJP74/qgrPW7/xGbqCG5quwFa0taYTmvGEgVjKa2+/OqjsagNN5TAGaf4ckPG2hq3IEl/0YJBlWuyMIVsCibOmtdTC0V5KsIkTBqqw+wG+7rbqU+QOWvUZinFtIwB7UpraAzkyrABs2aFiootqiJkOUTEtRYnaUH1cMhN6g=,iv:ctOq97PODiouIQN5ibya2bcxVjX7XMRbBYQY9j4Ja1M=,tag:+fEE+tHTSJEJxN/bNZ8T0w==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
