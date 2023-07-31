@@ -16,16 +16,16 @@ spec:
       prometheus:
         enabled: true
   count: 1
-  host: tdemo.akslab3.tap.fynesy.com
+  host: tdemo.akslab4.tap.fynesy.com
   api:
-    serverUrl: https://tdemo.akslab3.tap.fynesy.com
+    serverUrl: https://tdemo.akslab4.tap.fynesy.com
     title: Tanzu Demo APIs
     description: Sample basic SCG + TAP Demos
     version: 0.0.1
     groupID: "tanzu-demo"
     cors:
       allowedOrigins:
-      - "https://api-portal.akslab3.tap.fynesy.com"
+      - "https://api-portal.akslab4.tap.fynesy.com"
       allowedMethods:
       - "GET"
       allowedHeaders:

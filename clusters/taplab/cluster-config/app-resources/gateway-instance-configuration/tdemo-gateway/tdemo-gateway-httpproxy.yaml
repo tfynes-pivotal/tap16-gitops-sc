@@ -11,6 +11,6 @@ spec:
         - name: tdemo-gateway
           port: 80
   virtualhost:
-    fqdn: tdemo.akslab3.tap.fynesy.com
+    fqdn: tdemo.akslab4.tap.fynesy.com
     tls:
       secretName: tdemo-gateway-tls-cert

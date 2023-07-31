@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   dnsNames:
-  - petclinic.akslab3.tap.fynesy.com
+  - petclinic.akslab4.tap.fynesy.com
   secretName: petclinic-gateway-tls-cert
   issuerRef:
     name: letsencrypt-production
