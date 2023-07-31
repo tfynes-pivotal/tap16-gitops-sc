@@ -23,4 +23,4 @@ spec:
     groupId: petclinic
     cors:
       allowedOrigins:
-      - "https://api-portal.gkelab3.tap.fynesy.com"
+      - "https://api-portal.gkelab4.tap.fynesy.com"
