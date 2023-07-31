@@ -5,6 +5,14 @@ tap_install:
                 project_path: ENC[AES256_GCM,data:vVq/oJrnw64377vkGCJCJmmNJHM=,iv:OxUeyEVXpn9mtY0uVxdydQqoB/yyrxK8G9xK1cFQ9Fw=,tag:NkiYpshoU/WVyycOliYaew==,type:str]
                 username: ENC[AES256_GCM,data:0+/RlQu9,iv:Jp32Z+I+XweatLPK/zDP8iwr+uApXV4sBIqGRpgUxs0=,tag:dbgB/wXbXydXzEUfUn3Ruw==,type:str]
                 password: ENC[AES256_GCM,data:0i9v6eTx6+kiyRpCH/AuZNn4vDzMDsOfBsymZ7bYMFpLRiL4,iv:o3tbFdnbRD9VJIP0jApzIrM3MRZQfsqhTJm4cn/MOpk=,tag:pxeQ/IkeQi1JaTDP/qgaQg==,type:str]
+            tap_gui:
+                app_config:
+                    integrations:
+                        github:
+                            - host: ENC[AES256_GCM,data:lTYMvS9CXEeBMA==,iv:gmzt73xjAmxxDj0KCGB3prjNLBNHz2ve+d/9digrV90=,tag:5Wse7JuEJS2IG9EJ0LLcUA==,type:str]
+                              token: ENC[AES256_GCM,data:93qpzERdx9NXd3ucr/3y9CL4YQKsbvkJsvmlW2z8hacfJHofjRu0XQ==,iv:2ZQq+XTkBNW4jS00qlVcZRQkSCUwBS1BCGXX6f9hxek=,tag:pA3vnQ24vImfX9YmhNRzqw==,type:str]
+.vscode:
+    settings.json: ENC[AES256_GCM,data:gTw=,iv:TrSAs+5e6E/P6AwgcijWVK0wkLmnhlvSy4LoF576XpM=,tag:GhCVZuHPgMpt8GWfOOXYxw==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -20,8 +28,8 @@ sops:
             S3dXNDBhVXVtQjlLeG9vNWhhYkpBZ1UKPJDVLUigjcJEdSThXLc/yEOXxI7qSRJV
             PPzXWf2JIfJjbVXbdM3nfanlPSSyQZcUCTr+pfJPL4ri7Y+sNm/48Q==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-07-27T19:08:19Z"
-    mac: ENC[AES256_GCM,data:poNIpJ6ldC7sOVVM5II2BPTL1cK8W/Mu4OGlJBmtWwUPg+VkyABgAbK+7mDcai0DvBEBVPgDHkNV9Vf9boe7HG3D+CqrWTMhIJePPCItLMPzDsC0QGjhbcfc1476oiHurOYrPiGyrCAOnjGcSBrDfMI5/bU8gHEubIAWYERT0ao=,iv:rtIWaK1z0jjk2e+6ELbgq+Qom8udysY6ZtjNtDXnL2Q=,tag:g5GjD8B24m++xSajTFc5Jw==,type:str]
+    lastmodified: "2023-07-31T17:46:31Z"
+    mac: ENC[AES256_GCM,data:17+oA1e4eEqTItQItI+QU0QpoGUkdGewGpGomNe4yF0SxNhp8YvzTpDc1qdJoYaiBf9NwCGA1MV8Shplmi0QCioNDJolaoSEATdoFOjDH3ipjlldHDXM24dpNodoSoSlvUqb9RrYnOKDUgqA5bttfGFfdsAlxitMsL0fNSz9rLQ=,iv:1+q8nXzGGXihQ3oJhF+zwq+xXfks9fDDWoNHNQpcfKw=,tag:ukR+ja7Fx3JEPe+fsivR6A==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
