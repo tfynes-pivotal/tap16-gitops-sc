@@ -37,8 +37,8 @@ tap_install:
           service_type: ClusterIP # If the shared.ingress_domain is set as earlier, this must be set to ClusterIP.
           metadataStoreAutoconfiguration: true 
           app_config:
-          #!  auth:
-          #!    allowGuestAccess: true
+            auth:
+              allowGuestAccess: false
             catalog:
               locations:
                 - type: url
