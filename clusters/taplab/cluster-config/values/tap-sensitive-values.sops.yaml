@@ -11,13 +11,8 @@ tap_install:
                     github:
                         - host: ENC[AES256_GCM,data:nNOfI/qcuvbM2Q==,iv:TxP4CxVEvptL8WgJnLk12KFVUsoW05Rl4/Pk7st++b0=,tag:z8+Gxs0Qzhm5nh4ehiE41Q==,type:str]
                           token: ENC[AES256_GCM,data:Is5a3pBqBzHffha5gU3ARslU86/0Sm2xIZQxM++sjXb9MKq8/1TDGQ==,iv:6KLO3txmMNhfpYaYUUWSnoBGB3h8V0lfMEwxyxVM1yY=,tag:TSZq+cvyv3jLKCsmk3O96w==,type:str]
-                auth:
-                    environment: ENC[AES256_GCM,data:AQSkKn5cwDN5YEs=,iv:ucR8rZLkQwsnzRDkKjtNYrknRjhvh5RzbLj5jL+lzac=,tag:pm1fy7Sp5Id5pr+I4tPorg==,type:str]
-                    providers:
-                        github:
-                            development:
-                                clientId: ENC[AES256_GCM,data:nqCwW7yZR+WNw/6QHCR3mZL8OZM=,iv:kU/VX2sZ3qqIOddKvM/0dHAG/+0CFkzoPydPhY3R/6w=,tag:7bf4CN8JUSfeXl0/mZ9MSw==,type:str]
-                                clientSecret: ENC[AES256_GCM,data:7CNw94Xb4mDorNbQKWkIirb/3BjYKcpBlXNuimdlP2lcqmdv4rJnqg==,iv:AV9TZtCuXgOKFVpIWT0/wev9satGsP/Hdy9Fk72GFUk=,tag:Un7q2gMRxfFh5GZI3H5otQ==,type:str]
+.vscode:
+    settings.json: ENC[AES256_GCM,data:/Fg=,iv:L6MlstcxztxRkvaJZyfEXIAoeboaZIkVlC7u2cSmsy0=,tag:9oQz5DU3zEZZNR/NSAF3BA==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -33,8 +28,8 @@ sops:
             S3dXNDBhVXVtQjlLeG9vNWhhYkpBZ1UKPJDVLUigjcJEdSThXLc/yEOXxI7qSRJV
             PPzXWf2JIfJjbVXbdM3nfanlPSSyQZcUCTr+pfJPL4ri7Y+sNm/48Q==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-07-31T19:04:19Z"
-    mac: ENC[AES256_GCM,data:GHJ70TDzp8AZt0XQLdZVnQerYlrxV3Xxt8/NeaZSYomrs5dHuS0RRoawCAsJLR190ph/u2D9NP63xWH7aKI0CJtYlKqCgASA+XJ2L9fhI1E2QoJt+pOqVlVMICYG5G17ZMuSNDGLlk+YQHjMbiP3oR38B8OPvUrWHzrwOAde8C0=,iv:w+HpCOu20MA/4h089GqW1Xvq36VIc77JsRScZdFhPCw=,tag:O8J4oGVL8Tn6zH3DpHjCaQ==,type:str]
+    lastmodified: "2023-07-31T20:04:16Z"
+    mac: ENC[AES256_GCM,data:28oE+rFoL/11+ctJ9LteTvXnWDH7FWwweLcsVHTAX5CxpwRGGTI+2pBBbqXoKBCE+VF4F2lfvFaVlzPNrCYAwtGauGy+rxlLUiojySJJ7robQ9L1Bx/JEy4bp7brIEoKef1Z3T7Onr0n9OwdiFnSElUcjnO5YSVgC2ESahCn81U=,iv:OPEm/R701zmwqfQ8cofdTCVbjX2x/b3he9lSlkaUgeI=,tag:QHL0S2D5I84LIBU156tbYw==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
