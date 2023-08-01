@@ -2,9 +2,9 @@ apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
   labels:
-    app.kubernetes.io/part-of: tg
+    app.kubernetes.io/part-of: tg2
     apps.tanzu.vmware.com/workload-type: web
-  name: tg
+  name: tg2
   namespace: default
 spec:
   params:
@@ -13,7 +13,7 @@ spec:
       autoscaling.knative.dev/minScale: "1"
   env:
     - name: message
-      value: tg
+      value: tg2
   source:
     git:
       ref:
