@@ -5,6 +5,12 @@ tap_install:
                 project_path: ENC[AES256_GCM,data:vVq/oJrnw64377vkGCJCJmmNJHM=,iv:OxUeyEVXpn9mtY0uVxdydQqoB/yyrxK8G9xK1cFQ9Fw=,tag:NkiYpshoU/WVyycOliYaew==,type:str]
                 username: ENC[AES256_GCM,data:0+/RlQu9,iv:Jp32Z+I+XweatLPK/zDP8iwr+uApXV4sBIqGRpgUxs0=,tag:dbgB/wXbXydXzEUfUn3Ruw==,type:str]
                 password: ENC[AES256_GCM,data:0i9v6eTx6+kiyRpCH/AuZNn4vDzMDsOfBsymZ7bYMFpLRiL4,iv:o3tbFdnbRD9VJIP0jApzIrM3MRZQfsqhTJm4cn/MOpk=,tag:pxeQ/IkeQi1JaTDP/qgaQg==,type:str]
+        tap_gui:
+            app_config:
+                integrations:
+                    github:
+                        - host: ENC[AES256_GCM,data:F38eOWzitj3Jcw==,iv:DueTArhDjZeUAHnCRe3MOabUGu47S5UUGDWoQdolB7E=,tag:VqYxRrtoxW07qNPJseEMVg==,type:str]
+                          token: ENC[AES256_GCM,data:7VrV0nGdSvFZBD4DcwcznJqMx6/kTBJyG2AjfI4wBOC/GlKj6EJiUQ==,iv:49UL2mWAokI/PVFIU8UZCRSz6fcyO9Mczya7H7VKo/8=,tag:+q4HKCy/VG7Jp+FHGAP6LQ==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -20,8 +26,8 @@ sops:
             S3dXNDBhVXVtQjlLeG9vNWhhYkpBZ1UKPJDVLUigjcJEdSThXLc/yEOXxI7qSRJV
             PPzXWf2JIfJjbVXbdM3nfanlPSSyQZcUCTr+pfJPL4ri7Y+sNm/48Q==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-07-27T19:08:19Z"
-    mac: ENC[AES256_GCM,data:poNIpJ6ldC7sOVVM5II2BPTL1cK8W/Mu4OGlJBmtWwUPg+VkyABgAbK+7mDcai0DvBEBVPgDHkNV9Vf9boe7HG3D+CqrWTMhIJePPCItLMPzDsC0QGjhbcfc1476oiHurOYrPiGyrCAOnjGcSBrDfMI5/bU8gHEubIAWYERT0ao=,iv:rtIWaK1z0jjk2e+6ELbgq+Qom8udysY6ZtjNtDXnL2Q=,tag:g5GjD8B24m++xSajTFc5Jw==,type:str]
+    lastmodified: "2023-08-03T19:51:02Z"
+    mac: ENC[AES256_GCM,data:jwrxhYQNiEDer3wAtYaGwofddGd2VW1NTuIHUF/lELOejjFVh5+GzVI1HYwzJM8VbjBKIdEClT2FvrrfN6W18JjM3fP6huWWo07ryywEksDAPMMxgWZde9hB+SlJ9fX6l1OJ87BrZ1FHAVy4g77d8mkgzN6RecjUoqjc6nwmkJk=,iv:YtRYdOy+/PYzc+mUw6EWbnjXvrXLfzHoh/dU80w/kug=,tag:GHWhCRQ/pZDrfuphPXWXjw==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
