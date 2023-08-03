@@ -7,6 +7,13 @@ tap_install:
                 password: ENC[AES256_GCM,data:0i9v6eTx6+kiyRpCH/AuZNn4vDzMDsOfBsymZ7bYMFpLRiL4,iv:o3tbFdnbRD9VJIP0jApzIrM3MRZQfsqhTJm4cn/MOpk=,tag:pxeQ/IkeQi1JaTDP/qgaQg==,type:str]
         tap_gui:
             app_config:
+                auth:
+                    environment: ENC[AES256_GCM,data:Dn6wRXpUiXRHElo=,iv:RfOv8OYPSCbRUL4H0aknEizdL+N+e6EdBMqdL2f2hVk=,tag:2zsCBCkQp08hlesoQifATA==,type:str]
+                    providers:
+                        github:
+                            development:
+                                clientId: ENC[AES256_GCM,data:XDoEJ4X7inZoO4tLz5lmFlmZWQ==,iv:o8M3YdX62Vj2pV1+RjvLv8GkNSvFU+hbzJ9U5In2JI4=,tag:TXqTqvNOlfC/qk91WR73BQ==,type:str]
+                                clientSecret: ENC[AES256_GCM,data:6ly5kpQ+ksZ/1p2Ej83NZHpoilCyNbp492TDcTRcu77VfiRHMiBcxA==,iv:iOrV+qidG3aJYMYNLBJAJFm/Zc4xTTH2QL6G/cDgtV8=,tag:scpr1d65k+kbHOMWwpjUGQ==,type:str]
                 integrations:
                     github:
                         - host: ENC[AES256_GCM,data:F38eOWzitj3Jcw==,iv:DueTArhDjZeUAHnCRe3MOabUGu47S5UUGDWoQdolB7E=,tag:VqYxRrtoxW07qNPJseEMVg==,type:str]
@@ -26,8 +33,8 @@ sops:
             S3dXNDBhVXVtQjlLeG9vNWhhYkpBZ1UKPJDVLUigjcJEdSThXLc/yEOXxI7qSRJV
             PPzXWf2JIfJjbVXbdM3nfanlPSSyQZcUCTr+pfJPL4ri7Y+sNm/48Q==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-08-03T19:51:02Z"
-    mac: ENC[AES256_GCM,data:jwrxhYQNiEDer3wAtYaGwofddGd2VW1NTuIHUF/lELOejjFVh5+GzVI1HYwzJM8VbjBKIdEClT2FvrrfN6W18JjM3fP6huWWo07ryywEksDAPMMxgWZde9hB+SlJ9fX6l1OJ87BrZ1FHAVy4g77d8mkgzN6RecjUoqjc6nwmkJk=,iv:YtRYdOy+/PYzc+mUw6EWbnjXvrXLfzHoh/dU80w/kug=,tag:GHWhCRQ/pZDrfuphPXWXjw==,type:str]
+    lastmodified: "2023-08-03T20:18:40Z"
+    mac: ENC[AES256_GCM,data:v37FOjGoCNeJVrn3dJDjDXPA07yrATpJI9sDY/XsJU4zIcqLiQNCLItM9F1g7omyzUKCKCSJq1rt7RPCwd08epMKUNLbxJefYYy2T3518eMNdgTRjm8uMcGj8xDm5pOgwgKJAs+mpX+rgT7Bq/94lBHx8xTcl1snvDX6KmWotug=,iv:81NttJ2fckZFefgvZ103rB/H8mZRq8H5G8TMEov7ovs=,tag:x4nUrvrGAtZveA6AzkISjA==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
