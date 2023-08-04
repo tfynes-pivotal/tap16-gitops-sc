@@ -105,10 +105,6 @@ tap_install:
             supply_chain_service_account:
               secrets:
               - git
-        #!  import_data_values_secrets:
-        #!   - name: my-dockerhub-credentials
-        #!     namespace: tap-install
-        #!     create_export: true
         package_overlays:
          - name: api-portal
            secrets:
