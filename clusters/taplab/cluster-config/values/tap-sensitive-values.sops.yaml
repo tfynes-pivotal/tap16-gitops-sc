@@ -13,8 +13,8 @@ tap_install:
                     providers:
                         github:
                             development:
-                                clientId: ENC[AES256_GCM,data:M9/SobIrg8ufJNzxQKvRlZuAZw==,iv:crz0c1Ne/YSZ4DjPf9WtOCKKeDUi2LtP9kz2/gwVx20=,tag:OocoEC2yKD9QNLG4lQG8YA==,type:str]
-                                clientSecret: ENC[AES256_GCM,data:+DBg4SJPsd81+GKd5Ksgs6nCdGfOX7QW1gUV5m/2PbVjgkT3Navaew==,iv:36j86anxiISxhHBuYJ1HZ0JrTe80NwrF2XLuaw2AFXI=,tag:XhzJ6dzxA4cxYIlsZfijWg==,type:str]
+                                clientId: ENC[AES256_GCM,data:A6mR9pvbz045gQfoQ/OUHQoWvN8=,iv:OlHY5ZEnnYKTCVkT8OcB68QEi3eFx6W9vFXjc+WF1Pk=,tag:Jvp04Iu/0tQDWlp7rzfpvA==,type:str]
+                                clientSecret: ENC[AES256_GCM,data:+nVy8ZuW1/k3Rv/N+ykoNbJbw/QZOJrmA2P65NCppeV7kiK5DQcYBg==,iv:aJxP7tLSA57fO+q6BDjyPkH/FT4pEtViIG1+GU5cKrk=,tag:+4CrW19sHQqxU5l6xpM9Vw==,type:str]
                 integrations:
                     github:
                         - host: ENC[AES256_GCM,data:F38eOWzitj3Jcw==,iv:DueTArhDjZeUAHnCRe3MOabUGu47S5UUGDWoQdolB7E=,tag:VqYxRrtoxW07qNPJseEMVg==,type:str]
@@ -34,8 +34,8 @@ sops:
             S3dXNDBhVXVtQjlLeG9vNWhhYkpBZ1UKPJDVLUigjcJEdSThXLc/yEOXxI7qSRJV
             PPzXWf2JIfJjbVXbdM3nfanlPSSyQZcUCTr+pfJPL4ri7Y+sNm/48Q==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-08-04T15:29:52Z"
-    mac: ENC[AES256_GCM,data:yJlNKp0+VEvgItwhcAafrMwVE5PV3J58fDUbMRAjnnEIQi1NPUq450/u4Tu75ulWsbDk6Gf8yPmN5jOodtt61uIxu5XxBFsab483zsKK5s5qxUo3RmyWlhzioHzV5y9yoyiZGcB8zka7PY3U1GjkEwqj/M5x/GmdkYzTDP5c/TA=,iv:iaj32pB4wbjsjlZSDzVLxB/WmufZygHkq4aCjTq6ckk=,tag:PHv39j09ZHzZ3wDwqnNKUg==,type:str]
+    lastmodified: "2023-08-04T17:54:33Z"
+    mac: ENC[AES256_GCM,data:eSZMXQtNML+yjdhR501cbOAHuH4o9hu2uYLKwh4MjgSi9EQeVrD4jnJuuueT/VA2jAJq8B5nfYWID8TlQlLUEGB2Xy9wMEvBoTuzaSNADyIDlYNCaWfMzVVKRunftGvQhXV/SMGCzY6nYebudJAsf5Nf0TAYXsWZtKCFsX/jJhI=,iv:pndvmJZfYvBV6LSi7FK4gyUR+fa84897qQ0LsmWxPzc=,tag:fvPQ1TH1SCah/yU8cAI23A==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
