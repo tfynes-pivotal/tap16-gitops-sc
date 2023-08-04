@@ -92,18 +92,18 @@ tap_install:
               ref: origin/akslab
               subPath: clusters/taplab/cluster-config/namespaces/namespace-resources
               url: https://github.com/tfynes-pivotal/tap16-gitops-sc
-              secretRef:
-                name: workload-git-auth
-                namespace: tap-install
+              #!secretRef:
+               #! name: workload-git-auth
+                #!namespace: tap-install
           gitops_install:
             ref: origin/akslab
             subPath: clusters/taplab/cluster-config/namespaces
             url: https://github.com/tfynes-pivotal/tap16-gitops-sc
             path: _ytt_lib/namespace-resources
-          default_parameters:
-            supply_chain_service_account:
-              secrets:
-                - workload-git-auth
+          #!default_parameters:
+          #!  supply_chain_service_account:
+           #!   secrets:
+            #!    - workload-git-auth
         package_overlays:
          - name: api-portal
            secrets:
