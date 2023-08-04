@@ -6,8 +6,6 @@ metadata:
 type: ENC[AES256_GCM,data:SzK1S0Za,iv:eYLAMV8rbUsqhcNe2UdjXrGVEYWYOSzm5XemDisZRHQ=,tag:OX3UUG3IaSSqxy+hsfiGDA==,type:str]
 stringData:
     content.yaml: ENC[AES256_GCM,data:cZaIGaV97AsuOkv69NpYfgtejnBMNDyV/BYKwHEOo8xI0iuV/dCIlyO72ZtcKOf57VcJtAdwTV432UsoM2YqDz9t8XBQBGb2fL4YWGSoBYd3zFqZ3XEHqfRAq8FrqMnk2hjMdJK2OMHOXKm7s2aLBvUtWuXNmQ==,iv:JDlq99BUdeJCKUcLmF/5uVzWkNt07do7yaKIGrJMggE=,tag:8N7+2yFGAxQ/oEglwssMgA==,type:str]
-.vscode:
-    settings.json: ENC[AES256_GCM,data:O0Y=,iv:nNjdcsGGsH5zgtqsEke8zSnVMiL0lqxlMaN9acFtFYE=,tag:w+6ivAYNmLl1stRQcz4vtw==,type:str]
 sops:
     kms: []
     gcp_kms: []
