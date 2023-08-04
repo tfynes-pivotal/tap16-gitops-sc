@@ -91,6 +91,14 @@ tap_install:
             ref: origin/akslab
             subPath: clusters/taplab/cluster-config/namespaces
             url: https://github.com/tfynes-pivotal/tap16-gitops-sc
+          import_data_values_secrets:
+          - name: workload-git-auth
+            namespace: tap-install
+            create_export: true
+          overlay_secrets:
+          - name: workload-git-auth-overlay
+            namespace: tap-install
+            create_export: true
           additional_sources:
           - git:
               ref: origin/akslab
