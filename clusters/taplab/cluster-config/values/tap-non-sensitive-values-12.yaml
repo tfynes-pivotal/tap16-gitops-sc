@@ -92,7 +92,7 @@ tap_install:
             subPath: clusters/taplab/cluster-config/namespaces
             url: https://github.com/tfynes-pivotal/tap16-gitops-sc
           import_data_values_secrets:
-          - name: workload-git-auth
+          - name: github-creds
             namespace: tap-install
             create_export: true
           overlay_secrets:
