@@ -96,6 +96,9 @@ tap_install:
               ref: origin/main
               subPath: clusters/taplab/cluster-config/namespaces/namespace-resources
               url: https://github.com/tfynes-pivotal/tap16-gitops-sc
+              secretRef:
+                name: github-creds
+                namespace: tap-install 
             path: _ytt_lib/namespace-resources
         #!  import_data_values_secrets:
         #!   - name: my-dockerhub-credentials
