@@ -1,9 +1,0 @@
----
-apiVersion: secretgen.carvel.dev/v1alpha1
-kind: SecretExport
-metadata:
-  name: workload-git-auth
-  namespace: tap-install
-spec:
-  toNamespaces:
-  - '*'
