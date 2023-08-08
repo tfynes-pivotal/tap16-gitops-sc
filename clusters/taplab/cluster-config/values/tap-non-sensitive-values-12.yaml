@@ -103,7 +103,7 @@ tap_install:
           default_parameters:
             supply_chain_service_account:
               secrets:
-                - workload-git-auth
+              - workload-git-auth
         package_overlays:
          - name: api-portal
            secrets:
