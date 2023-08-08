@@ -1,0 +1,19 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: tpf12
+  namespace: default
+  labels:
+    apps.tanzu.vmware.com/workload-type: web
+    apps.tanzu.vmware.com/has-tests: "true"
+    app.kubernetes.io/part-of: tpf12
+spec:
+  source:
+    git:
+      url: https://github.com/tfynes-pivotal/tpf12
+      ref:
+        branch: main
+  build:
+    env:
+      - name: BP_FUNCTION
+        value: func.main
