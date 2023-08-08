@@ -100,6 +100,10 @@ tap_install:
             subPath: clusters/taplab/cluster-config/namespaces
             url: https://github.com/tfynes-pivotal/tap16-gitops-sc
             path: _ytt_lib/namespace-resources
+          import_data_values_secrets:
+            - name: workload-git-auth
+              namespace: tap-install
+              create_export: true
           default_parameters:
             supply_chain_service_account:
               secrets:
