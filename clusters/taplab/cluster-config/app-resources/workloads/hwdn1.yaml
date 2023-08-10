@@ -1,0 +1,19 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: hwdn1
+  namespace: dev
+  labels:
+    apps.tanzu.vmware.com/workload-type: web
+    apps.tanzu.vmware.com/has-tests: "true"
+    app.kubernetes.io/part-of: hwdn1
+spec:
+  params:
+  - name: annotations
+    value:
+      autoscaling.knative.dev/minScale: "1"
+  source:
+    git:
+      url: https://github.com/tfynes-pivotal/hwdn1
+      ref:
+        branch: main
