@@ -1,10 +1,10 @@
-[0mUnseal Key 1: zUBwc9nGocrN6leCN0Ba5bTLFlGyBM9XoQoNSfyR7lXW[0m
-[0mUnseal Key 2: MobqbYlEAUGaeuDPFVm09Mb391dAWTcyknpzd7qP7rrx[0m
-[0mUnseal Key 3: n0QiUsgvfiQStoUZ1lob/WkV+RPKgF1hro7SSYRdj3Q3[0m
-[0mUnseal Key 4: l/LpdZeixVbicw+Tfmq1cEBx/BRCIXA2pUvnoYceoGTd[0m
-[0mUnseal Key 5: OwrXZOtWs/wSZ1zwO3pbVNnq+OIpSplkLH1zTIOHl1tk[0m
+./installVault-3[0mUnseal Key 1: Y7IGx6R1rGrMjsSG6Vh7E78eSUEYDYJlok6hgtbT53PO[0m
+[0mUnseal Key 2: iYouDaSNK0daPInt5w91pwAda1pIXJAuyE2nbUzPPF+i[0m
+[0mUnseal Key 3: Gi+53v1wFWZoeU3FyPUm0yQ1/ZGUfN3sUIXoInngOAC0[0m
+[0mUnseal Key 4: BcxwVkzqnOh9HuKKPRfhj1oxPnpVbUAXSb9hvzJOUJOC[0m
+[0mUnseal Key 5: NSIawvrTeTruuoq/Ers1lojUuv+vvS5Z5h/I32lFOFdJ[0m
 [0m[0m
-[0mInitial Root Token: hvs.0YW6PqlCreSOnJwC5aP8Jluh[0m
+[0mInitial Root Token: hvs.xmovzzmLIcRMyllDQ6YgweBJ[0m
 [0m[0m
 [0mVault initialized with 5 key shares and a key threshold of 3. Please securely
 distribute the key shares printed above. When the Vault is re-sealed,
@@ -16,3 +16,4 @@ reconstruct the root key, Vault will remain permanently sealed![0m
 [0m[0m
 [0mIt is possible to generate new unseal keys, provided you have a quorum of
 existing unseal keys shares. See "vault operator rekey" for more information.[0m
+.
