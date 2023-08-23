@@ -16,16 +16,16 @@ spec:
       prometheus:
         enabled: true
   count: 1
-  host: tdemo.tkglab.tap.fynesy.com
+  host: tdemo.tkglab.h2o-4-11809.h2o.vmware.com
   api:
-    serverUrl: https://tdemo.tkglab.tap.fynesy.com
+    serverUrl: https://tdemo.tkglab.h2o-4-11809.h2o.vmware.com
     title: Tanzu Demo APIs
     description: Sample basic SCG + TAP Demos
     version: 0.0.1
     groupID: "tanzu-demo"
     cors:
       allowedOrigins:
-      - "https://api-portal.tkglab.tap.fynesy.com"
+      - "https://api-portal.tkglab.h2o-4-11809.h2o.vmware.com"
       allowedMethods:
       - "GET"
       allowedHeaders:

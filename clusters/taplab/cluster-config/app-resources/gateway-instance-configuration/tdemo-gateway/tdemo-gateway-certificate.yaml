@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   dnsNames:
-  - tdemo.tkglab.tap.fynesy.com
+  - tdemo.tkglab.h2o-4-11809.h2o.vmware.com
   secretName: tdemo-gateway-tls-cert
   issuerRef:
     name: letsencrypt-production

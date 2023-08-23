@@ -2,8 +2,8 @@
 tap_install:
   values: 
         shared:
-          ingress_domain: "tkglab.tap.fynesy.com"
-          ingress_issuer: "letsencrypt-production"
+          ingress_domain: "tkglab.h2o-4-11809.h2o.vmware.com"
+          ingress_issuer: ""
 
 
         ceip_policy_disclosed: true

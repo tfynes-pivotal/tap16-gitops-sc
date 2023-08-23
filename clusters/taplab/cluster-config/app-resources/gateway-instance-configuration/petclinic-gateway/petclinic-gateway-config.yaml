@@ -23,4 +23,4 @@ spec:
     groupId: petclinic
     cors:
       allowedOrigins:
-      - "https://api-portal.tkglab.tap.fynesy.com"
+      - "https://api-portal.tkglab.h2o-4-11809.h2o.vmware.com"

@@ -5,7 +5,7 @@ metadata:
   namespace: api-portal
 spec:
   dnsNames:
-  - api-portal.tkglab.tap.fynesy.com
+  - api-portal.tkglab.h2o-4-11809.h2o.vmware.com
   secretName: api-portal-tls-cert
   issuerRef:
     name: letsencrypt-production

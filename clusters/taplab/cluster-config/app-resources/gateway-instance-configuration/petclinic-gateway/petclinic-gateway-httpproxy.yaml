@@ -11,6 +11,6 @@ spec:
         - name: petclinic-gateway
           port: 80
   virtualhost:
-    fqdn: petclinic.tkglab.tap.fynesy.com
+    fqdn: petclinic.tkglab.h2o-4-11809.h2o.vmware.com
     tls:
       secretName: petclinic-gateway-tls-cert
