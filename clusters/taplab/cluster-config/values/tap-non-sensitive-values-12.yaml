@@ -8,6 +8,7 @@ tap_install:
         excluded_packages:
           - fluxcd.source.controller.tanzu.vmware.com 
           - learningcenter.tanzu.vmware.com
+          - workshops.learningcenter.tanzu.vmware.com
 
         ceip_policy_disclosed: true
 
