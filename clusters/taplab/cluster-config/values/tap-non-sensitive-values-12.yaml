@@ -6,7 +6,7 @@ tap_install:
           ingress_issuer: ""
 
         excluded_packages:
-        - fluxcd.source.controller.tanzu.vmware.com 
+          - fluxcd.source.controller.tanzu.vmware.com 
 
         ceip_policy_disclosed: true
 
