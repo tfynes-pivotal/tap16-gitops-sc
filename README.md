@@ -110,7 +110,7 @@ Secrets Encryption containing references to; [TAP Docs Reference](https://docs.v
 
 * lots of 'self-references' in the repo, so global search and replace for the repo FQDN or subPaths as you modify them via your clone/fork
 
-* rate limits for LetsEncrypt http-solver.. i think it's something like 6 cluster recreates for a given domain per week.. then you have a 60hour cool-off period.. so i go from *.akslab1.... to *.akslab2... when necessary.. and you can adjust the domain after install if your http-solvers fail and gitOps magic will remediate the issue with your cluster certs. (Did I mention how awesome the gitOps installation/operations model is?)
+* rate limits for LetsEncrypt http-solver.. i think it's something like 6 cluster recreates for a given domain per week.. then you have a 60hour cool-off period.. so i go from *.tkglab.... to *.akslab2... when necessary.. and you can adjust the domain after install if your http-solvers fail and gitOps magic will remediate the issue with your cluster certs. (Did I mention how awesome the gitOps installation/operations model is?)
 
 
 ## My akslab / ekslab / gkelab create scripts (from my .bashrc)
