@@ -23,4 +23,4 @@ spec:
     groupId: petclinic
     cors:
       allowedOrigins:
-      - "https://api-portal.akslab2.tap.fynesy.com"
+      - "https://api-portal.akslab1.tap.fynesy.com"
