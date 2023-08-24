@@ -11,6 +11,6 @@ spec:
         - name: petclinic-gateway
           port: 80
   virtualhost:
-    fqdn: petclinic.akslab1.tap.fynesy.com
+    fqdn: petclinic.akslab2.tap.fynesy.com
     tls:
       secretName: petclinic-gateway-tls-cert
