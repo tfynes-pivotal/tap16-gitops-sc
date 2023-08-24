@@ -6,7 +6,4 @@ metadata:
 spec:
   dnsNames:
   - api-portal.tkglab.tap.fynesy.com
-  secretName: api-portal-tls-cert
-  issuerRef:
-    name: letsencrypt-production
-    kind: ClusterIssuer
+  secretName: tapfynesycom
