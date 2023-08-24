@@ -7,3 +7,6 @@ spec:
   dnsNames:
   - api-portal.tkglab.tap.fynesy.com
   secretName: tapfynesycom
+issuerRef:
+  name: foo
+  kind: Issue
