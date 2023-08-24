@@ -6,7 +6,7 @@ metadata:
 spec:
   service:
     name: spring-petclinic-protected
-    #!uri: https://spring-petclinic-protected-default.tkglab.h2o-4-11809.h2o.vmware.com
+    #!uri: https://spring-petclinic-protected-default.tkglab.fynesy.com
   routes:
   - predicates:
       - Path=/**

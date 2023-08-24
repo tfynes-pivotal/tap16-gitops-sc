@@ -11,6 +11,6 @@ spec:
         - name: tdemo-gateway
           port: 80
   virtualhost:
-    fqdn: tdemo.tkglab.h2o-4-11809.h2o.vmware.com
+    fqdn: tdemo.tkglab.fynesy.com
     tls:
       secretName: tdemo-gateway-tls-cert

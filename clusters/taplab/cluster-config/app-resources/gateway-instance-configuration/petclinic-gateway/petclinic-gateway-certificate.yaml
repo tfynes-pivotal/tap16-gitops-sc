@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   dnsNames:
-  - petclinic.tkglab.h2o-4-11809.h2o.vmware.com
+  - petclinic.tkglab.fynesy.com
   secretName: petclinic-gateway-tls-cert
   issuerRef:
     name: letsencrypt-production
