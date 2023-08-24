@@ -38,6 +38,9 @@ tap_install:
           kp_default_repository: "fynesy/buildservice"
 
         tap_gui:
+          tls:
+            namespace: tanzu-system-ingress
+            secretName: tapfynesycom
           service_type: ClusterIP # If the shared.ingress_domain is set as earlier, this must be set to ClusterIP.
           metadataStoreAutoconfiguration: true 
           app_config:
@@ -66,6 +69,7 @@ tap_install:
 
         cnrs:
           domain_template: '{{.Name}}-{{.Namespace}}.{{.Domain}}'
+          default_tls_secret: tanzu-system-ingress/tapfynesycom
 
         api_portal:
           apiPortalServer:
