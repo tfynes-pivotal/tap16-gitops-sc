@@ -1,0 +1,8 @@
+---
+apiVersion: secretgen.carvel.dev/v1alpha1
+kind: SecretImport
+metadata:
+  name: tapfynesycom
+  namespace: default
+spec:
+  fromNamespace: tap-install
