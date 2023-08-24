@@ -9,4 +9,4 @@ spec:
   secretName: tapfynesycom
 issuerRef:
   name: foo
-  kind: Issue
+  kind: ClusterIssuer
