@@ -1,7 +1,7 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: api-portal-tls-cert.yaml
+  name: api-portal-tls-cert
   namespace: api-portal
 spec:
   dnsNames:
