@@ -8,5 +8,5 @@ spec:
   - api-portal.tkglab.tap.fynesy.com
   secretName: tapfynesycom
 issuerRef:
-  name: foo
+  name: letsencrypt-production
   kind: ClusterIssuer
