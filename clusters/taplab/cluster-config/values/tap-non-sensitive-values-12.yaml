@@ -5,7 +5,7 @@ tap_install:
           ingress_domain: "tkglab.h2o-4-11809.h2o.vmware.com"
           ingress_issuer: ""
 
-        excluded_packages:
+        #excluded_packages:
         #  - fluxcd.source.controller.tanzu.vmware.com 
         #  - learningcenter.tanzu.vmware.com
         #  - workshops.learningcenter.tanzu.vmware.com
