@@ -13,4 +13,4 @@ spec:
   virtualhost:
     fqdn: tdemo.tkglab.tap.fynesy.com
     tls:
-      secretName: tdemo-gateway-tls-cert
+      secretName: tapfynesycom
