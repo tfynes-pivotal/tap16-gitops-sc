@@ -1,0 +1,11 @@
+apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
+kind: Accelerator
+metadata:
+  name: ta-tap-installer
+  namespace: accelerator-system
+spec:
+  git:
+    url: https://github.com/tfynes-pivotal/ta-tap-installer
+    ref:
+      branch: main
+  
