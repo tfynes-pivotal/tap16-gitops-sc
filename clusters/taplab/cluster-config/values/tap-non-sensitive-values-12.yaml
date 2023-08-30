@@ -1,3 +1,4 @@
+#@ load("@ytt:data", "data")
 ---
 tap_install:
   values: 
@@ -34,7 +35,7 @@ tap_install:
           kp_default_repository: "fynesy/buildservice"
 
         tap_gui:
-          service_type: ClusterIP # If the shared.ingress_domain is set as earlier, this must be set to ClusterIP.
+          service_type: ClusterIP #! If the shared.ingress_domain is set as earlier, this must be set to ClusterIP.
           metadataStoreAutoconfiguration: true 
           app_config:
             #!auth:
@@ -46,7 +47,7 @@ tap_install:
 
         metadata_store:
           ns_for_export_app_cert: "*"
-          app_service_type: ClusterIP # Defaults to LoadBalancer. If shared.ingress_domain is set earlier, this must be set to ClusterIP.
+          app_service_type: ClusterIP #! Defaults to LoadBalancer. If shared.ingress_domain is set earlier, this must be set to ClusterIP.
 
         scanning:
           metadataStore:
@@ -55,7 +56,7 @@ tap_install:
         grype:
           namespace: "default"
           targetImagePullSecret: "tap-registry"
-          # In a single cluster, the connection between the scanning pod and the metadata store happens inside the cluster and does not pass through ingress. This is automatically configured, you do not need to provide an ingress connection to the store.
+          #! In a single cluster, the connection between the scanning pod and the metadata store happens inside the cluster and does not pass through ingress. This is automatically configured, you do not need to provide an ingress connection to the store.
 
         policy:
           tuf_enabled: false 
