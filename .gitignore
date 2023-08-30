@@ -15,3 +15,6 @@ clusters/taplab/cluster-config/not-deployed/api-security-guide/vault install scr
 clusters/taplab/cluster-config/not-deployed/api-security-guide/vault install scripts/vault.out
 clusters/taplab/cluster-config/not-deployed/api-security-guide/vault install scripts/vault.out
 clusters/taplab/cluster-config/not-deployed/api-security-guide/vault install scripts/vault.out
+clusters/taplab/cluster-config/.DS_Store
+clusters/taplab/cluster-config/app-resources/.DS_Store
+clusters/taplab/cluster-config/app-resources/gateway-instance-configuration/.DS_Store
