@@ -6,3 +6,4 @@ clusters/taplab/cluster-config/not-deployed/api-security-guide/vault install scr
 clusters/taplab/cluster-config/not-deployed/api-security-guide/vault install scripts/vault.out
 clusters/taplab/cluster-config/not-deployed/api-security-guide/vault install scripts/vault.out
 clusters/taplab/tanzu-sync/app/sensitive-values/.decrypted~tanzu-sync-values.sops.yaml
+clusters/taplab/cluster-config/not-deployed/api-security-guide/vault install scripts/vault.out

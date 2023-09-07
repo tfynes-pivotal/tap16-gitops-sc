@@ -8,7 +8,8 @@ secrets:
         git:
             basic_auth:
                 username: ENC[AES256_GCM,data:uNnYtRWGc6ec7RvR83o=,iv:c4EWQNwYiNj7SHD+sqhPD11zhajJS0hANLu2dWQwsyA=,tag:eZzwSNH5XLvdUKP/Tvedpw==,type:str]
-                password: ENC[AES256_GCM,data:tG5qPHvgp02/JU8EyjhoGvooNJKDvh/OwXCJ8j5mOtPMi63fUY8q3Q==,iv:U55HgojyTZsbtl0NFgX48yEgGhVekgIgulevQvZwuQE=,tag:bCj2lSa8YqDtjBjNZnWvGQ==,type:str]
+                #ENC[AES256_GCM,data:brS0xMG7Xv6dHhuihIRI1Xah0aIPnlOxJtwF4NMdfy1ekP/kercAe0w2H6Li6hR5f6/TGQ==,iv:s2Bkq85CiV91P7zgNQfP1DesTGa9CtMgkho8tUYN91E=,tag:V3SdiK4gCn+csCN2ehTuLg==,type:comment]
+                password: ENC[AES256_GCM,data:dPzHiKZPLD2gOMikyha9rnh7cry38lYMPaDw8gVTb6FSpKgC1GSbvg==,iv:pOyvnhnfP6x9vkqNmgi7MvxrQvB2tLHdNx8MbtpYG64=,tag:ylMwxxPcGhDSv3Yydzd2zw==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -24,8 +25,8 @@ sops:
             bGg5VGVoNlkxUVJYU25QaktGYXUzVkkKO8UMFDYkPAGXJnLOOAYDHCT01jHMnPoO
             JFx9whlCsbD3DW0qnCDTg9vieMbKdfsXNZJwcbWtKY078+OuYcy9cQ==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-07-27T19:06:01Z"
-    mac: ENC[AES256_GCM,data:rjMMnj8CSyhRicVMVPgOrcBSxA5n4hok1AhJjEYTWxq2L5o1KHYclrMWipdpF/+d+bVdE+AUq+5RnQp2/pGHc1CAbalsST3UV6PMRB+y3rFSTHPwLZsJ5V5zzWrlkSQP0nnWGhLwpZg+YFyrxMWFjCR/rq9gHGj/fhL687iHmX4=,iv:dgs1GMb9UVlwLKx0iC0HdWsAdH+ymVXAFH2foXVASEo=,tag:Wu+Vq6DuCMa/oWUgn9GSrQ==,type:str]
+    lastmodified: "2023-09-07T14:47:41Z"
+    mac: ENC[AES256_GCM,data:VnPsVhJXDBR++Wn4hVR7CFgjlP201Pw6OFOsdQ9OSc0awBZq/lqDgyxFYoSMT4QLl7OKKlA+kded5nk46/xO+UuEjyVUBhV6Rtszml6S4Q+U/n5jl0DIkkLBZuwJQn9eNhZBq0Nr/b8C1ZmpJFiNvTQ5TeyjWlD0g8ePy+K35CI=,iv:PA1rhNalrsAwGcO08uMFSwapDn5kdZOSDDuf5Y0zKjs=,tag:RFlpNcArX++ChLtaRFv2Og==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
