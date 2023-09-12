@@ -10,7 +10,7 @@ spec:
   params:
   - name: annotations
     value:
-      autoscaling.knative.dev/minScale: "1"
+      autoscaling.knative.dev/minScale: "2"
   env:
     - name: message
       value: tanzu3
