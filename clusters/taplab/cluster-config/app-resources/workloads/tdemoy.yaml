@@ -2,9 +2,9 @@ apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
   labels:
-    app.kubernetes.io/part-of: tdemox
+    app.kubernetes.io/part-of: tdemoy
     apps.tanzu.vmware.com/workload-type: web
-  name: tdemox
+  name: tdemoy
   namespace: default
 spec:
   params:
@@ -13,7 +13,7 @@ spec:
       autoscaling.knative.dev/minScale: "1"
   env:
     - name: message
-      value: tanzux
+      value: tanzuy
   source:
     git:
       ref:
