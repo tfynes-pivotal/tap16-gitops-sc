@@ -54,10 +54,10 @@ run-in-vault-pod "cat /tmp/apip | vault policy write api-portal-policy -"
 run-in-vault-pod "vault auth enable kubernetes"
 
 # ADD API-PORTAL & SCG ROLE TO VAULT
-run-in-vault-pod "vault write auth/kubernetes/role/api-portal-role bound_service_account_names=api-portal,tdemo-gateway-svc-acc bound_service_account_namespaces=api-portal,default policies=api-portal-policy ttl=24h"
+run-in-vault-pod "vault write auth/kubernetes/role/api-portal-role bound_service_account_names=api-portal,tdemo-gateway-svc-acc,navin-gateway-svc-acc bound_service_account_namespaces=api-portal,default,navin policies=api-portal-policy ttl=24h"
 
 # CONFIGURE VAULT K8S CONFIG
-write-to-vault-pod "VAULT_TOKEN='$roottoken' vault write auth/kubernetes/config token_reviewer_jwt=\"\$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)\" kubernetes_host=\"https://\$KUBERNETES_PORT_443_TCP_ADDR:443\" kubernetes_ca_cert=@/var/run/secrets/kubernetes.io/serviceaccount/ca.crt bound_service_account_names=api-portal,tdemo-gateway-svc-acc bound_service_account_namespaces=api-portal,default policies=api-portal-policy ttl=24h" "/tmp/vault-k8s-config"
+write-to-vault-pod "VAULT_TOKEN='$roottoken' vault write auth/kubernetes/config token_reviewer_jwt=\"\$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)\" kubernetes_host=\"https://\$KUBERNETES_PORT_443_TCP_ADDR:443\" kubernetes_ca_cert=@/var/run/secrets/kubernetes.io/serviceaccount/ca.crt bound_service_account_names=api-portal,tdemo-gateway-svc-acc,navin-gateway-svc-acc bound_service_account_namespaces=api-portal,default,navin policies=api-portal-policy ttl=24h" "/tmp/vault-k8s-config"
 
 run-in-vault-pod "chmod +x /tmp/vault-k8s-config"
 run-in-vault-pod "/tmp/vault-k8s-config"
