@@ -1,7 +1,7 @@
 apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
 kind: Accelerator
 metadata:
-  name: ta-tap-installer
+  name: ta-harbor-installer
   namespace: accelerator-system
 spec:
   git:
