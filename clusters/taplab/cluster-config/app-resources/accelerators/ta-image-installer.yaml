@@ -1,0 +1,10 @@
+apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
+kind: Accelerator
+metadata:
+  name: ta-image-installer
+  namespace: accelerator-system
+spec:
+  git:
+    url: https://github.com/tfynes-pivotal/ta-image-installer
+    ref:
+      branch: main
