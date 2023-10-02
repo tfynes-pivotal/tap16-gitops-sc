@@ -12,8 +12,7 @@ tap_install:
         ceip_policy_disclosed: true
 
         accelerator:
-          samples:
-            include: false
+          samples.include: false
 
         profile: full 
         supply_chain: basic 
