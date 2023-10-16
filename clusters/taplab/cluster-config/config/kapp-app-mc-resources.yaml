@@ -1,0 +1,19 @@
+apiVersion: kappctrl.k14s.io/v1alpha1
+kind: App
+metadata:
+  name: app-mc-resources
+  namespace: tanzu-sync
+  annotations:
+    kapp.k14s.io/change-rule.0: "upsert after upserting pkgi"
+spec:
+  serviceAccountName: sync-sa
+  fetch:
+    - git:
+        ref: origin/tkglab
+        url: https://github.com/tfynes-pivotal/tap-app-ops
+        subPath: workload
+  template:
+    - ytt: {}
+  deploy:
+    - kapp:
+        rawOptions: ["--dangerous-allow-empty-list-of-resources=true"]
