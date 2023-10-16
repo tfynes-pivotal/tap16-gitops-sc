@@ -11,7 +11,7 @@ spec:
     - git:
         ref: origin/main
         url: https://github.com/tfynes-pivotal/tap-app-ops
-        subPath: workload
+        subPath: workloads
   template:
     - ytt: {}
   deploy:
