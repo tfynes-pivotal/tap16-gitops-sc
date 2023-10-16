@@ -9,7 +9,7 @@ spec:
   serviceAccountName: sync-sa
   fetch:
     - git:
-        ref: origin/tkglab
+        ref: origin/main
         url: https://github.com/tfynes-pivotal/tap-app-ops
         subPath: workload
   template:
