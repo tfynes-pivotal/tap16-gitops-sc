@@ -18,7 +18,8 @@ tap_install:
                 integrations:
                     github:
                         - host: ENC[AES256_GCM,data:F38eOWzitj3Jcw==,iv:DueTArhDjZeUAHnCRe3MOabUGu47S5UUGDWoQdolB7E=,tag:VqYxRrtoxW07qNPJseEMVg==,type:str]
-                          token: ENC[AES256_GCM,data:YRNaR+XWbM2yofi0OtwlaiLhYjooyNEjcmzy/IiiFpcg3nRc7p0YXQ==,iv:ap/Dyp+rBdNAX7JlcgRmydU6IhbxVEsRCqFKQsg93NY=,tag:tA+eSyu/79+XNBFPY6Q85g==,type:str]
+                          #ENC[AES256_GCM,data:4yI0x6EOz1j7YsPylyP4nXND7waP0uacsWazdDcmSBOSMZHZTAiIk3tv4QQhTIY=,iv:LXrj8WDJVfV5lD+66m4efFbFkqSSnmoThM+ZZcHk2jk=,tag:Ym3Jt71+AgZ6eZ+0GOfp3g==,type:comment]
+                          token: ENC[AES256_GCM,data:/C/woMPS4jt0O9y1qRrHTXBdsenYzpvqyEt0tY2dKm/irDMnxXoJIw==,iv:6qy2aAW7v6l/ExcVKHP7eRsTQk9s4dClgQx+P7vBUWA=,tag:7zfhZ3dFl7/45ceM/B5N0g==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -34,8 +35,8 @@ sops:
             S3dXNDBhVXVtQjlLeG9vNWhhYkpBZ1UKPJDVLUigjcJEdSThXLc/yEOXxI7qSRJV
             PPzXWf2JIfJjbVXbdM3nfanlPSSyQZcUCTr+pfJPL4ri7Y+sNm/48Q==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-10-16T13:55:06Z"
-    mac: ENC[AES256_GCM,data:LkKQVQR5O7PqnlL9AxJNQt814JkeJDi/KonnupdQkrFPNzBSGo2XEEJEyP1UrOKZ3wrBnorLWOaYyLy6KDh6YX55ZTHgy707bqyJWoFcDjjbiRznUwMSbowjDE3fEmfYNznefoyJycu95ll/oZxNhaMLWV6zjI/46FVuCzXyGpo=,iv:9BsSGYQ+a0Ot9LZHEGE3Q40LuIej7FVSwa7FuvO1Hbg=,tag:fLDAOTEjG9M/dgN/GbtfIA==,type:str]
+    lastmodified: "2023-10-18T21:23:28Z"
+    mac: ENC[AES256_GCM,data:hp4o5MGnevW+sLgo3WK6UFA0nmU63YdWFppSyraWGU13ACFa3oxMqKJF+hB1+UYyzjrv0xVYpc5K7yF6m90pkHWajGApNYh4mvGT2EpMXSiZq2hWX2GfC3M1RTUCR5bPBIVYw3MEIbCuXm7x8ah60LUekabQBMV8beiV8FJneMo=,iv:ODjbzHjFHyK7CXfR9OIQ4LsVoDvnMsuCzhkQf+d0I2w=,tag:UTQyCIfpME62uZG+ksiaTQ==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
