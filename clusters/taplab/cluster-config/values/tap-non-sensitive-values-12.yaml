@@ -1,6 +1,9 @@
 ---
 tap_install:
   values: 
+        accelerator:
+          samples:
+            include: false
         shared:
           ingress_domain: "akslab.tap.fynesy.com"
           ingress_issuer: "letsencrypt-production"
