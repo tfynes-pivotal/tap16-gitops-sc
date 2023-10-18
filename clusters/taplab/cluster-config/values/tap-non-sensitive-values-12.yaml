@@ -29,6 +29,10 @@ tap_install:
         - ootb-supply-chain-basic
         - ootb-templates
         - policy-controller
+        - scanning
+        - service-bindings
+        - services-toolkit
+        
 
 
         ceip_policy_disclosed: true
