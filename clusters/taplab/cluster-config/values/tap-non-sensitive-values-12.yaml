@@ -71,6 +71,7 @@ tap_install:
               default_route: "create"
               features:
                 docs:
+                  enabled: false
                   showInSidebar: false
                 search:
                   showInSidebar: false
