@@ -8,6 +8,9 @@ tap_install:
         - learningcenter.tanzu.vmware.com
         - workshops.learningcenter.tanzu.vmware.com
         - eventing.tanzu.vmware.com
+        - api-auto-registration
+        - api-portal
+        - appliveview
 
         ceip_policy_disclosed: true
 
