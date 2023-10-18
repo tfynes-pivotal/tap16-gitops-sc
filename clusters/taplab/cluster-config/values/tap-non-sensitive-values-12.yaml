@@ -69,12 +69,12 @@ tap_install:
           app_config:
             customize:
               default_route: "create"
-            #!auth:
-            #!  allowGuestAccess: true
-            catalog:
-              locations:
-                - type: url
-                  target: http://github.com/tfynes-pivotal/tapblankcatalog/blob/main/catalog-info.yaml
+            auth:
+              allowGuestAccess: true
+            #catalog:
+            #  locations:
+            #    - type: url
+            #      target: http://github.com/tfynes-pivotal/tapblankcatalog/blob/main/catalog-info.yaml
 
         metadata_store:
           ns_for_export_app_cert: "*"
