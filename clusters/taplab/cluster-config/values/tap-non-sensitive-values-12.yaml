@@ -160,15 +160,15 @@ tap_install:
               secrets:
               - workload-git-auth
         package_overlays:
-         - name: api-portal
-           secrets:
-           - name: api-portal-cm-tls-overlay-secret
+        #  - name: api-portal
+        #    secrets:
+        #    - name: api-portal-cm-tls-overlay-secret
          - name: accelerator
            secrets:
            - name: reqfix-overlay-secret
-         - name: api-auto-registration
-           secrets:
-           - name: reqfix-overlay-secret
+        #  - name: api-auto-registration
+        #    secrets:
+        #    - name: reqfix-overlay-secret
          - name: appliveview
            secrets:
            - name: reqfix-overlay-secret
