@@ -13,25 +13,25 @@ tap_install:
         - eventing.tanzu.vmware.com
         - api-auto-registration
         - api-portal
-        - appliveview
-        - appliveview-apiserver
-        - appliveview-connector
-        - appliveview-conventions
-        - appsso
-        - buildservice
-        - cartographer
-        - crossplane
-        - developer-conventions
-        - grype
-        - local-source-proxy
-        - metadata-store
-        - ootb-delivery-basic
-        - ootb-supply-chain-basic
-        - ootb-templates
-        - policy-controller
-        - scanning
-        - service-bindings
-        - services-toolkit
+        # - appliveview
+        # - appliveview-apiserver
+        # - appliveview-connector
+        # - appliveview-conventions
+        # - appsso
+        # - buildservice
+        # - cartographer
+        # - crossplane
+        # - developer-conventions
+        # - grype
+        # - local-source-proxy
+        # - metadata-store
+        # - ootb-delivery-basic
+        # - ootb-supply-chain-basic
+        # - ootb-templates
+        # - policy-controller
+        # - scanning
+        # - service-bindings
+        # - services-toolkit
         
 
 
