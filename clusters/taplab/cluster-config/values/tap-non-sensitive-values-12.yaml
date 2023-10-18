@@ -73,18 +73,18 @@ tap_install:
                 docs:
                   enabled: false
                   showInSidebar: false
-                search:
-                  showInSidebar: false
-                apiDocs:
-                  showInSidebar: false
-                appliveview:
-                  showInSidebar: false
-                catalog:
-                  showInSidebar: false
+                # search:
+                #   showInSidebar: false
+                # apiDocs:
+                #   showInSidebar: false
+                # appliveview:
+                #   showInSidebar: false
+                # catalog:
+                #   showInSidebar: false
                 
                 
-              banners:
-                text: "TAP INSTALLER SUITE"
+              # banners:
+              #   text: "TAP INSTALLER SUITE"
             auth:
               allowGuestAccess: true
             #catalog:
