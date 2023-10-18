@@ -212,9 +212,9 @@ tap_install:
          #! - name: eventing
          #!   secrets:
          #!   - name: reqfix-overlay-secret
-         - name: fluxcd-source-controller
-           secrets:
-           - name: reqfix-overlay-secret
+        #  - name: fluxcd-source-controller
+        #    secrets:
+        #    - name: reqfix-overlay-secret
          - name: grype
            secrets:
            - name: reqfix-overlay-secret
