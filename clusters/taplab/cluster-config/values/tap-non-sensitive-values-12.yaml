@@ -72,16 +72,20 @@ tap_install:
               banners:
                 custom_name: "TAP Installer"
               features:
+                search:
+                  enabled: false
+                settings:
+                  enabled: false
+                apiDocs:
+                  enabled: false
+                appliveview:
+                  enabled: false
+                catalog:
+                  enabled: false
+                catalogGraph:
+                  enabled: false
                 docs:
-                  showInSidebar: false
-                # search:
-                #   showInSidebar: false
-                # apiDocs:
-                #   showInSidebar: false
-                # appliveview:
-                #   showInSidebar: false
-                # catalog:
-                #   showInSidebar: false
+                  enabled: false
                 
                 
               # banners:
