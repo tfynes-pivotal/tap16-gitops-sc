@@ -69,6 +69,19 @@ tap_install:
           app_config:
             customize:
               default_route: "create"
+              features:
+                docs:
+                  showInSidebar: false
+                search:
+                  showInSidebar: false
+                apiDocs:
+                  showInSidebar: false
+                appliveview:
+                  showInSidebar: false
+                catalog:
+                  showInSidebar: false
+                
+                
               banners:
                 text: "TAP INSTALLER SUITE"
             auth:
