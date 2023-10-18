@@ -69,6 +69,8 @@ tap_install:
           app_config:
             customize:
               default_route: "create"
+              banners:
+                custom_name: "TAP Installer"
               features:
                 docs:
                   enabled: false
