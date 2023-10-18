@@ -68,7 +68,7 @@ tap_install:
           metadataStoreAutoconfiguration: true 
           app_config:
             customize:
-              default_route: 'create'
+              default_route: "create"
             #!auth:
             #!  allowGuestAccess: true
             catalog:
