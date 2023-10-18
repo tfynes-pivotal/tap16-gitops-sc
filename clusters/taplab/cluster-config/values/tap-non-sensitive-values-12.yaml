@@ -69,6 +69,8 @@ tap_install:
           app_config:
             customize:
               default_route: "create"
+              banners:
+                text: "TAP INSTALLER SUITE"
             auth:
               allowGuestAccess: true
             #catalog:
