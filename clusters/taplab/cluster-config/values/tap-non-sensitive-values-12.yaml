@@ -14,10 +14,10 @@ tap_install:
         - api-auto-registration.tanzu.vmware.com
         - api-portal.tanzu.vmware.com
         - fluxcd.source.controller.tanzu.vmware.com
-        # - appliveview
-        # - appliveview-apiserver
-        # - appliveview-connector
-        # - appliveview-conventions
+        - appliveview
+        - appliveview-apiserver
+        - appliveview-connector
+        - appliveview-conventions
         # - appsso
         # - buildservice
         # - cartographer
@@ -170,18 +170,18 @@ tap_install:
         #  - name: api-auto-registration
         #    secrets:
         #    - name: reqfix-overlay-secret
-         - name: appliveview
-           secrets:
-           - name: reqfix-overlay-secret
-         - name: appliveview-apiserver
-           secrets:
-           - name: reqfix-overlay-secret
-         - name: appliveview-connector
-           secrets:
-           - name: reqfix-overlay-secret
-         - name: appliveview-conventions
-           secrets:
-           - name: reqfix-overlay-secret
+        #  - name: appliveview
+        #    secrets:
+        #    - name: reqfix-overlay-secret
+        #  - name: appliveview-apiserver
+        #    secrets:
+        #    - name: reqfix-overlay-secret
+        #  - name: appliveview-connector
+        #    secrets:
+        #    - name: reqfix-overlay-secret
+        #  - name: appliveview-conventions
+        #    secrets:
+        #    - name: reqfix-overlay-secret
          - name: appsso
            secrets:
            - name: reqfix-overlay-secret
