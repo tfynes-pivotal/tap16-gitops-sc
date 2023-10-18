@@ -71,10 +71,9 @@ tap_install:
               default_route: "create"
               banners:
                 custom_name: "TAP Installer"
-              features:
-                docs:
-                  enabled: false
-                  showInSidebar: false
+              features.docs:
+                enabled: false
+                showInSidebar: false
                 # search:
                 #   showInSidebar: false
                 # apiDocs:
