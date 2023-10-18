@@ -67,6 +67,8 @@ tap_install:
           service_type: ClusterIP #! If the shared.ingress_domain is set as earlier, this must be set to ClusterIP.
           metadataStoreAutoconfiguration: true 
           app_config:
+            customize:
+              default_route: '/create'
             #!auth:
             #!  allowGuestAccess: true
             catalog:
