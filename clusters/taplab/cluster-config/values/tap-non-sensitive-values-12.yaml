@@ -11,8 +11,8 @@ tap_install:
         # - learningcenter.tanzu.vmware.com
         - workshops.learningcenter.tanzu.vmware.com
         - eventing.tanzu.vmware.com
-        - api-auto-registration
-        - api-portal
+        - api-auto-registration.tanzu.vmware.com
+        - api-portal.tanzu.vmware.com
         # - appliveview
         # - appliveview-apiserver
         # - appliveview-connector
@@ -88,8 +88,6 @@ tap_install:
                   enabled: false
                 
                 
-              # banners:
-              #   text: "TAP INSTALLER SUITE"
             auth:
               allowGuestAccess: true
             #catalog:
