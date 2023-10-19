@@ -13,7 +13,6 @@ tap_install:
         - eventing.tanzu.vmware.com
         - api-auto-registration.tanzu.vmware.com
         - api-portal.tanzu.vmware.com
-        - fluxcd.source.controller.tanzu.vmware.com
         - appliveview
         - appliveview-apiserver
         - appliveview-connector
