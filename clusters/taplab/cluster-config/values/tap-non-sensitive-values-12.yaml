@@ -94,6 +94,13 @@ tap_install:
             create: true
             name: api-portal
 
+        local_source_proxy:
+          repository: fynesy/local-source
+          push_secret:
+            name: lsp-push-credentials
+            namespace: tap-install
+            create_export: true
+
         namespace_provisioner:
           controller: false
           additional_sources:
