@@ -95,7 +95,7 @@ tap_install:
             name: api-portal
 
         local_source_proxy:
-          repository: fynesy/local-source
+          repository: index.docker.io/fynesy/local-source
           push_secret:
             name: lsp-push-credentials
             namespace: tap-install
